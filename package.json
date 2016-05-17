@@ -1,0 +1,95 @@
+{
+  "name": "gamebot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.prod.js",
+    "serve": "npm run build && node server.js",
+    "dev": "node server.js",
+    "tdd": "mocha --opts mocha.opts --watch --watch-extensions js",
+    "test": "mocha --opts mocha.opts",
+    "storybook": "start-storybook -p 9003",
+    "coverage": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --opts mocha.opts --bail"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esmevane/gamebot.git"
+  },
+  "keywords": [
+    "game",
+    "bot",
+    "dice",
+    "character",
+    "manager",
+    "kit"
+  ],
+  "author": "Joseph McCormick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esmevane/gamebot/issues"
+  },
+  "homepage": "https://github.com/esmevane/gamebot#readme",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-0"
+    ],
+    "ignore": [
+      "/**/*.js"
+    ]
+  },
+  "devDependencies": {
+    "@kadira/storybook": "^1.26.0",
+    "autoprefixer": "^6.3.1",
+    "babel": "^6.3.26",
+    "babel-loader": "^6.2.2",
+    "babel-polyfill": "^6.5.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "body-parser": "^1.15.0",
+    "chai": "^3.4.1",
+    "chai-as-promised": "^5.3.0",
+    "chai-immutable": "^1.5.3",
+    "css-loader": "^0.23.1",
+    "enzyme": "^2.3.0",
+    "express": "^4.13.3",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "immutable": "^3.7.6",
+    "immutablediff": "^0.4.2",
+    "isomorphic-fetch": "^2.2.1",
+    "istanbul": "^1.0.0-alpha",
+    "json-server": "^0.8.10",
+    "lodash": "^4.6.1",
+    "mocha": "^2.3.4",
+    "morgan": "^1.7.0",
+    "node-neat": "^1.7.2",
+    "node-normalize-scss": "^1.3.0",
+    "node-sass": "^3.4.2",
+    "postcss-loader": "^0.8.0",
+    "proxy-middleware": "^0.15.0",
+    "react": "^15.0.2",
+    "react-addons-css-transition-group": "^15.0.2",
+    "react-addons-test-utils": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "react-hot-loader": "^1.3.0",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.4.0",
+    "react-router-redux": "^4.0.4",
+    "redux": "^3.5.2",
+    "redux-devtools": "^3.3.1",
+    "redux-devtools-dock-monitor": "^1.1.1",
+    "redux-form": "^6.0.0-alpha.10",
+    "redux-saga": "^0.10.4",
+    "resolve-url-loader": "^1.4.3",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "uuid": "^2.0.1",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
